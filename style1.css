@@ -1,0 +1,35 @@
+body{
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+   
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:xx-large;
+    font-weight: 900;
+    font-size: 70px;
+    color: white;
+}
+button{
+    margin-left: 600px;
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 4px 4px 10px white;
+    margin-bottom: 200px;
+}
+button:active{
+    box-shadow: 6px 6px 30px white;
+}

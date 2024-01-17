@@ -1,0 +1,123 @@
+.container{
+    margin: 0px;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(120deg,rgb(25, 25, 78),black);
+   
+  
+}
+.toDo h2 img{
+height: 30px;
+width: 30px;
+margin-top: 5px;
+margin-left: 10px;
+}
+.toDo{
+   width: 100%;
+   max-width: 560px;
+   background-color: rgb(211, 211, 148);
+   margin: 10px auto 20px;
+   padding: 40px 30px 70px;
+   border-radius: 20px;
+}
+.toDo h2{
+   padding-top: 2px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+/* .row{
+    display: flex;
+    align-items: center;
+  
+    background:#edeef0;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 25px;
+padding-left: 20px;
+} */
+input{
+
+width: 300px;
+background-color:white;
+flex: 1;
+padding: 10px;
+font-weight: 14px;
+border-radius: 30px;
+color: black;
+
+}
+.addTask {
+  
+    border-radius: 40px;
+    background-color: rgb(148, 88, 9);
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px black;
+    color: rgb(225, 225, 225);
+    margin-bottom:50px;
+    padding: 8px 20px;
+    outline: none;
+
+}
+.addTask:active{
+    box-shadow: 2px 2px 10px black;
+}
+
+ul li{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+}
+ul li::before{
+content:" ";
+position: absolute;
+height: 15px;
+width: 15px;
+border: 1px black solid;
+border-radius: 50%;
+padding-left: 0px;
+top: 10px;
+left: -50px;
+background-image: url(unchecked.png);
+background-size: cover;
+border-radius: 50%;
+
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content:" ";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border: 1px black solid;
+    border-radius: 50%;
+    padding-left: 0px;
+    top: 10px;
+    left: -50px;
+    background-image: url(checked.png);
+    background-size: cover;
+    border-radius: 50%;
+    
+    }
+   .delete{
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: rgb(148, 88, 9);
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px black;
+    margin-left: 150px;
+   }
+
+   .delete:active{
+    box-shadow: 2px 2px 10px black;
+}
